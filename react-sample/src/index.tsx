@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Parent from './components/ContainerSample';
 import Header from './components/ContentSample';
+import StateCounter from './components/StateCounter';
  
 const Hello = () => {
   const onClick = () => { alert('hello') }
@@ -25,6 +26,7 @@ root.render(
     <Header />
     <Hello />
     <Parent />
+    <StateCounter initialValue={10} />
   </React.StrictMode>
 );
 
