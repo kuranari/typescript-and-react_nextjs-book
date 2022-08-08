@@ -8,6 +8,7 @@ import Header from './components/ContentSample';
 import StateCounter from './components/StateCounter';
 import ReducerCounter from './components/ReducerCounter';
 import Clock from './components/Clock';
+import UseContextSample from './components/useContextSample';
  
 const Hello = () => {
   const onClick = () => { alert('hello') }
@@ -31,6 +32,7 @@ root.render(
     <StateCounter initialValue={10} />
     <ReducerCounter initialValue={10} />
     <Clock />
+    <UseContextSample />
   </React.StrictMode>
 );
 
