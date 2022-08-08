@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Parent from './components/ContainerSample';
+import Header from './components/ContentSample';
  
 const Hello = () => {
   const onClick = () => { alert('hello') }
@@ -21,6 +22,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    <Header />
     <Hello />
     <Parent />
   </React.StrictMode>
