@@ -3,13 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Parent from './components/ContainerSample';
+ 
+const Hello = () => {
+  const onClick = () => { alert('hello') }
+  const text = 'hello, React'
+
+  return (
+    <div onClick={onClick}>
+      {text}
+    </div>
+  )
+}
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Hello />
+    <Parent />
   </React.StrictMode>
 );
 
