@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components'
+import { Input } from '../components/Input'
 
 const H1 = styled.h1`
   color: red;
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <Input label="Username" />
         <H1>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </H1>
