@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components'
 import { Input } from '../components/Input'
+import { DelayInput } from '../components/DelayInput'
 
 const H1 = styled.h1`
   color: red;
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Input label="Username" />
+        <DelayInput onChange={(e) => console.log(e.target.value)}/>
         <H1>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </H1>
