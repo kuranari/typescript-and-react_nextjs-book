@@ -9,6 +9,7 @@ import StateCounter from './components/StateCounter';
 import ReducerCounter from './components/ReducerCounter';
 import Clock from './components/Clock';
 import UseContextSample from './components/useContextSample';
+import UseInputExample from './components/useInputSample';
  
 const Hello = () => {
   const onClick = () => { alert('hello') }
@@ -33,6 +34,7 @@ root.render(
     <ReducerCounter initialValue={10} />
     <Clock />
     <UseContextSample />
+    <UseInputExample />
   </React.StrictMode>
 );
 
