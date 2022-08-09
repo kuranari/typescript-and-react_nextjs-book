@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { StyledButton } from "../components/StyledButton";
 import { action } from "@storybook/addon-actions"
+import MDXDocument from './StyledButton.mdx'
 
 export default {
   title: "StyledButton",
@@ -15,11 +16,17 @@ export default {
     children: {
       control: { type: 'text' },
     },
+  },
+  parameters: {
+    docs: {
+      page: MDXDocument
+    }
   }
 } as ComponentMeta<typeof StyledButton>;
 
 const Template: ComponentStory<typeof StyledButton> = (args) => <StyledButton {...args} />
 
+// この bind 関数は何をやっているんだ
 export const TemplateTest = Template.bind({})
 
 TemplateTest.args = {
